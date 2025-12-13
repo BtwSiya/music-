@@ -37,9 +37,14 @@ class Inline:
                     self.ikb(text="⥁", callback_data=f"controls replay {chat_id}"),
                     self.ikb(text="‣‣I", callback_data=f"controls skip {chat_id}"),
                     self.ikb(text="▢", callback_data=f"controls stop {chat_id}"),
+                ]
+            )
+            keyboard.append(
+                [
                     self.ikb(text="close", callback_data="help close"),
                 ]
             )
+
         return self.ikm(keyboard)
 
     def help_markup(
