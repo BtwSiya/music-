@@ -1,8 +1,3 @@
-# Copyright (c) 2025 AnonymousX1025
-# Licensed under the MIT License.
-# This file is part of AnonXMusic
-
-
 from pyrogram import types
 
 from anony import app, config, lang
@@ -145,15 +140,15 @@ class Inline:
             [self.ikb(text=lang["help"], callback_data="help")],
             [
                 self.ikb(text=lang["support"], url=config.SUPPORT_CHAT),
-                self.ikb(text=lang["channel"], url=config.SUPPORT_CHANNEL),
+                self.ikb(text=lang["dev"], user_id=config.OWNER_ID),
             ],
         ]
         if private:
             rows += [
                 [
                     self.ikb(
-                        text=lang["source"],
-                        url="https://t.me/ToxicTechz",
+                        text=lang["love"],
+                        url="https://t.me/do_pal0",
                     )
                 ]
             ]
@@ -169,4 +164,4 @@ class Inline:
                     self.ikb(text="Youtube", url=link),
                 ],
             ]
-        )
+    )
